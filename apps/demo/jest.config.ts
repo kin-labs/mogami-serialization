@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'solana',
+  displayName: 'demo',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -8,16 +8,9 @@ export default {
     },
   },
   testEnvironment: 'node',
-  transformIgnorePatterns: [
-    'node_modules/'
-  ],
   transform: {
-    '^.+\\.[tj]sx?$': 'babel-jest',
+    '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/libs/solana',
+  coverageDirectory: '../../coverage/apps/demo',
 };
-
-// transform: {
-//   '^.+\\.[tj]s$': 'ts-jest',
-// },
